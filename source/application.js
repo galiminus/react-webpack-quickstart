@@ -4,21 +4,19 @@ injectTapEventPlugin();
 
 import ReactDOM from 'react-dom';
 
-import TestCompoment from 'components/test-component';
+import TestComponent from 'components/test-component';
 
 const Application = React.createClass({
     render() {
         return (
-	    <div>
-	        <h1>Hello</h1>
-	        <TestComponent title="world" />
-	    </div>
+            <div>
+                <h1>Hello</h1>
+                <TestComponent title="world" />
+            </div>
         );
     }
 });
 
 ReactDOM.render(
-    <Provider store={store}>
-        <Application />
-    </Provider>
+    <Application />
 , document.getElementById('application'));
